@@ -11,11 +11,15 @@ namespace parse_and_Tryparse
         static void Main(string[] args)
         {
             int result = 0;
-            string number = "1000";
-            int i = int.Parse(number);
+            Console.WriteLine("Enter Any for parse");
+            string s1 = Console.ReadLine();
+           // string number = "1000";
+            int i = int.Parse(s1);
             Console.WriteLine(i);
-            string number_plus_characters = "1000bhehchd";
-            bool issuccessful= int.TryParse(number_plus_characters, out result);
+            Console.WriteLine("Enter Any for Tryparse");
+            string s = Console.ReadLine();
+            // string number_plus_characters = "1000b";
+            bool issuccessful = int.TryParse(s, out result);
             if (issuccessful)
             {
                 Console.WriteLine(result);
